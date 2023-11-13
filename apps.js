@@ -235,14 +235,119 @@ function svar() {
   console.log(rep);
 }
 
-//moving over to the other converter 
-
-let Binary = document.getElementById("binær1").value;
-
 function downdate() {
+  let binært1;
+  binært1 = document.getElementById("binær1").value
 
+  let IPValue = 0;
+  if (binært1[0] == 1) {
+    IPValue += 128;
+  }
+  if (binært1[1] == 1) {
+    IPValue += 64;
+  }
+  if (binært1[2] == 1) {
+    IPValue += 32;
+  }
+  if (binært1[3] == 1) {
+    IPValue += 16;
+  }
+  if (binært1[4] == 1) {
+    IPValue += 8;
+  }
+  if (binært1[5] == 1) {
+    IPValue += 4;
+  }
+  if (binært1[6] == 1) {
+    IPValue += 2;
+  }
+  if (binært1[7] == 1) {
+    IPValue += 1;
+  }
+  if (binært1[8] === ".") {
+    IPValue += "."
+  }
+  let IPValue2 = 0;
+  if (binært1[9] == 1) {
+    IPValue2 += 128
+  }
+  if (binært1[10] == 1) {
+    IPValue2 += 64
+  }
+  if (binært1[11] == 1) {
+    IPValue2 += 32
+  }
+  if (binært1[12] == 1) {
+    IPValue2 += 16
+  }
+  if (binært1[13] == 1) {
+    IPValue2 += 8
+  }
+  if (binært1[14] == 1) {
+    IPValue2 += 4
+  }
+  if (binært1[15] == 1) {
+    IPValue2 += 2
+  }
+  if (binært1[16] == 1) {
+    IPValue2 += 1
+  }
+  if (binært1[17] === ".") {
+    IPValue2 += "."
+  }
+  let IPValue3 = 0;
+  if (binært1[18] == 1) {
+    IPValue3 += 128
+  }
+  if (binært1[19] == 1) {
+    IPValue3 += 64
+  }
+  if (binært1[20] == 1) {
+    IPValue3 += 32
+  }
+  if (binært1[21] == 1) {
+    IPValue3 += 16
+  }
+  if (binært1[22] == 1) {
+    IPValue3 += 8
+  }
+  if (binært1[23] == 1) {
+    IPValue3 += 4
+  }
+  if (binært1[24] == 1) {
+    IPValue3 += 2
+  }
+  if (binært1[25] == 1) {
+    IPValue3 += 1
+  }
+  if (binært1[26] === ".") {
+    IPValue3 += "."
+  }
+  let IPValue4 = 0;
+  if (binært1[27] == 1) {
+    IPValue4 += 128
+  }
+  if (binært1[28] == 1) {
+    IPValue4 += 64
+  }
+  if (binært1[29] == 1) {
+    IPValue4 += 32
+  }
+  if (binært1[30] == 1) {
+    IPValue4 += 16
+  }
+  if (binært1[31] == 1) {
+    IPValue4 += 8
+  }
+  if (binært1[32] == 1) {
+    IPValue4 += 4
+  }
+  if (binært1[33] == 1) {
+    IPValue4 += 2
+  }
+  if (binært1[34] == 1) {
+    IPValue4 += 1
+  }
+  console.log(IPValue + IPValue2 + IPValue3 + IPValue4)
+  document.getElementById("svar1").innerHTML = "Ip Adresse:" + IPValue + IPValue2 + IPValue3 + IPValue4;
 }
-
-//for (let i = 0; i < 8; i++) {
-//console.log(2 ** i);
-//}
